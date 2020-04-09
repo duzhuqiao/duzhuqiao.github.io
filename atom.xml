@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://duzhuqiao.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-04-09T06:17:20.740Z</updated>
+    <title>Dawn</title>
+    <updated>2020-04-09T06:19:38.005Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://duzhuqiao.github.io"/>
     <link rel="self" href="https://duzhuqiao.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>空空如也</subtitle>
     <logo>https://duzhuqiao.github.io/images/avatar.png</logo>
     <icon>https://duzhuqiao.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, Dawn</rights>
     <entry>
         <title type="html"><![CDATA[First Blog]]></title>
         <id>https://duzhuqiao.github.io/post/first-blog/</id>
