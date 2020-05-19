@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://duzhuqiao.github.io</id>
     <title>Dawn</title>
-    <updated>2020-05-18T09:54:10.060Z</updated>
+    <updated>2020-05-19T13:51:23.683Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://duzhuqiao.github.io"/>
     <link rel="self" href="https://duzhuqiao.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://duzhuqiao.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn</rights>
     <entry>
-        <title type="html"><![CDATA[李登程介绍]]></title>
+        <title type="html"><![CDATA[李先生]]></title>
         <id>https://duzhuqiao.github.io/post/li-deng-cheng-jie-shao/</id>
         <link href="https://duzhuqiao.github.io/post/li-deng-cheng-jie-shao/">
         </link>
