@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://duzhuqiao.github.io</id>
     <title>Dawn</title>
-    <updated>2020-08-18T11:06:13.423Z</updated>
+    <updated>2020-08-18T11:08:07.643Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://duzhuqiao.github.io"/>
     <link rel="self" href="https://duzhuqiao.github.io/atom.xml"/>
@@ -16,7 +16,9 @@
         <link href="https://duzhuqiao.github.io/post/san-dui-san/">
         </link>
         <updated>2020-08-18T11:04:26.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://duzhuqiao.github.io/post-images/1597748676116.jpg" alt="" loading="lazy">再小的帆也能远航</p>
+        <content type="html"><![CDATA[<!-- more -->
+<!-- more -->
+<p><img src="https://duzhuqiao.github.io/post-images/1597748676116.jpg" alt="" loading="lazy">再小的帆也能远航</p>
 ]]></content>
     </entry>
     <entry>
