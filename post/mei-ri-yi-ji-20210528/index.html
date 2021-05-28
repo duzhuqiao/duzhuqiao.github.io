@@ -1,0 +1,171 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>每日一记（2021/05/28） | duzq</title>
+<link rel="shortcut icon" href="https://duzhuqiao.github.io/favicon.ico?v=1622172488510">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://duzhuqiao.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="每日一记（2021/05/28） | duzq - Atom Feed" href="https://duzhuqiao.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="Redis
+支持的数据类型：String（字符串），list（列表），set（集合），hash（哈希），zset（sorted set：有序集合）。
+String（字符串）：基本的数据类型，一个key对应一个value，最大存储512MB；..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://duzhuqiao.github.io">
+  <img class="avatar" src="https://duzhuqiao.github.io/images/avatar.png?v=1622172488510" alt="">
+  </a>
+  <h1 class="site-title">
+    duzq
+  </h1>
+  <p class="site-description">
+    再小的帆也能远航
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              每日一记（2021/05/28）
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-05-28
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>Redis<br>
+支持的数据类型：String（字符串），list（列表），set（集合），hash（哈希），zset（sorted set：有序集合）。<br>
+String（字符串）：基本的数据类型，一个key对应一个value，最大存储512MB；SET key value，GET key。<br>
+list（列表）：简单的字符串列表，按照插入顺序排序；lpush/rpush key value,lrange key 0 5(取值范围)。<br>
+set（集合）：是String类型的无序集合，集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是 O(1)。sadd key value，添加一个 string 元素到 key 对应的 set 集合中，成功返回 1，如果元素已经在集合中返回 0。smembers key<br>
+hash（哈希）：是一个键值(key=&gt;value)对集合。Redis hash 是一个 string 类型的 field 和 value 的映射表，hash 特别适合用于存储对象。<br>
+redis 127.0.0.1:6379&gt; DEL ceshi<br>
+redis 127.0.0.1:6379&gt; HMSET ceshi field1 &quot;Hello&quot; field2 &quot;World&quot;<br>
+&quot;OK&quot;<br>
+redis 127.0.0.1:6379&gt; HGET ceshi field1<br>
+&quot;Hello&quot;<br>
+redis 127.0.0.1:6379&gt; HGET ceshi field2<br>
+&quot;World&quot;<br>
+zset（sorted set：有序集合）：Redis zset 和 set 一样也是string类型元素的集合,且不允许重复的成员。不同的是每个元素都会关联一个double类型的分数。redis正是通过分数来为集合中的成员进行从小到大的排序。zset的成员是唯一的,但分数(score)却可以重复。zadd 命令添加元素到集合，元素在集合中存在则更新对应score。zadd key score（分数） value ，ZRANGEBYSCORE key 0 1000</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://duzhuqiao.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
