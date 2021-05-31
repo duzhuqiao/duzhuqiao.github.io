@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://duzhuqiao.github.io</id>
     <title>duzq</title>
-    <updated>2021-05-28T03:30:12.868Z</updated>
+    <updated>2021-05-31T02:23:48.757Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://duzhuqiao.github.io"/>
     <link rel="self" href="https://duzhuqiao.github.io/atom.xml"/>
@@ -10,6 +10,20 @@
     <logo>https://duzhuqiao.github.io/images/avatar.png</logo>
     <icon>https://duzhuqiao.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, duzq</rights>
+    <entry>
+        <title type="html"><![CDATA[每日一记]]></title>
+        <id>https://duzhuqiao.github.io/post/mei-ri-yi-ji/</id>
+        <link href="https://duzhuqiao.github.io/post/mei-ri-yi-ji/">
+        </link>
+        <updated>2021-05-31T02:21:53.000Z</updated>
+        <content type="html"><![CDATA[<p>Spring切面五种通知<br>
+1、before：前置通知，在一个方法执行前被调用。</p>
+<p>2、after: 在方法执行之后调用的通知，无论方法执行是否成功。</p>
+<p>3、after-returning: 仅当方法成功完成后执行的通知。</p>
+<p>4、after-throwing: 在方法抛出异常退出时执行的通知。</p>
+<p>5、around: 在方法执行之前和之后调用的通知</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[每日一记（2021/05/28）]]></title>
         <id>https://duzhuqiao.github.io/post/mei-ri-yi-ji-20210528/</id>
